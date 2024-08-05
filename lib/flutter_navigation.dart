@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/screens/Search%20screen/search_screen.dart';
+import 'package:ticket_booking/screens/Ticket/Ticket-screen.dart';
 import 'package:ticket_booking/screens/home_screen.dart';
 
 class FlutterNavigation extends StatefulWidget {
@@ -10,13 +11,11 @@ class FlutterNavigation extends StatefulWidget {
 }
 
 class _FlutterNavigationState extends State<FlutterNavigation> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 2;
   final appScreens = [
     const HomeScreen(),
    const SearchScreen(),
-    const Center(
-      child: Text('Ticket'),
-    ),
+    const TicketView(),
     const Center(
       child: Text('Profile'),
     ),
